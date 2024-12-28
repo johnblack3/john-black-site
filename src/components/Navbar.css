@@ -1,0 +1,64 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #2e3a4e;
+    color: white;
+  }
+  
+  .navbar-logo h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .navbar-logo a {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .navbar-logo a:hover {
+    color: #61dafb;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    font-size: 22px;
+  }
+
+  .navbar-links li a,
+  .navbar-links li span {
+    cursor: pointer; /* Changes the cursor to a pointer */
+    text-decoration: none; /* Removes underline */
+    color: white;
+    transition: color 0.3s ease; /* Optional: Adds a hover effect */
+  }
+
+  .navbar-links li a:hover,
+  .navbar-links li span:hover {
+    color: #61dafb; /* Optional: Change text color on hover */
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #61dafb;
+  }
+  
