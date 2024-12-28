@@ -1,11 +1,12 @@
 .about-me {
-  padding: 20px;
+  padding: 40px 10%;
   background-color: #242424;
   text-align: center;
 }
 
 .about-me h2 {
   font-size: 28px;
+  margin-top: 0px;
   margin-bottom: 15px;
 }
 
@@ -13,4 +14,22 @@
   font-size: 18px;
   line-height: 1.6;
   margin: 10px 0;
+}
+
+.about-image {
+  flex: 0 0 auto; /* Prevent the image from shrinking */
+  max-width: 35%; /* Set a max width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about-content {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  gap: 2rem; /* Add spacing between text and image */
+}
+
+.about-text {
+  flex: 1; /* Let the text section take up more space */
+  padding: 0px 10%; /* Add padding around the text */
 }
