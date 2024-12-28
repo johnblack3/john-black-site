@@ -1,0 +1,90 @@
+.skills {
+  padding: 40px 150px;
+  background-color: #242424;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+.skills p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* Two columns, each taking equal space */
+  gap: 2rem; /* Space between items */
+}
+
+.skill {
+  flex: 1 1 calc(50% - 2rem); /* Take up half the row minus the gap */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1); /* Optional: Add a shadow */
+  padding: 1rem; /* Add padding inside each skill card */
+  border-radius: 8px; /* Optional: Rounded corners */
+  background-color: #5484b8; /* 2a2992 Background color for skill cards */
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+.skill-image {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-image:hover {
+  transform: scale(1.05);
+}
+
+.skill-info {
+  flex: 1;
+  padding: 0 50px 0 50px;
+}
+
+.skill-info h3 {
+  margin: 0 0 0.5rem 0; /* margin 10px or 0.5rem */
+  font-size: 22px;
+}
+
+.skill-info p {
+  margin: 0 0 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.skill-link {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #5484b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-link:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+}
